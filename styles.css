@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.calc {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: 2em;
+  background-color: black;
+}
+
+.calc-display {
+  text-align: right;
+  font-size: 2rem;
+  color: white;
+  padding: 0.75em 0.5em;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-row: repeat(5, 1fr);
+  gap: 2px;
+  height: 500px;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  font-size: 2rem;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.bg-orange {
+  color: #ffffff;
+  background-color: #d59a5a;
+}
