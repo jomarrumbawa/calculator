@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
 }
+body {
+  font-family: monospace;
+}
 
 .calc {
   max-width: 400px;
@@ -19,7 +22,7 @@
 
 .calc-buttons {
   display: grid;
-  grid-template-row: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 2px;
   height: 500px;
 }
