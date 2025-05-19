@@ -1,6 +1,7 @@
 const numBtns = document.querySelectorAll(".num-btn");
 const opBtns = document.querySelectorAll(".op-btn");
 const eqlBtn = document.querySelector(".eql-btn");
+const clrBtn = document.querySelector(".clr-btn");
 const display = document.querySelector(".calc-display");
 
 let firstOperand = null;
@@ -33,6 +34,13 @@ eqlBtn.addEventListener("click", function () {
     secondOperand = parseInt(display.textContent);
   }
   operate(firstOperand, secondOperand, currentOperation);
+});
+
+clrBtn.addEventListener("click", function () {
+  firstOperand = null;
+  secondOperand = null;
+  currentOperation = null;
+  display.textContent = "0";
 });
 
 function operate(first, second, sign) {
