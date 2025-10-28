@@ -49,8 +49,14 @@ numBtns.forEach(num => num.addEventListener("click", function(event) {
 }))
 
 opBtns.forEach(op => op.addEventListener("click", function(event) {
+  if (firstNum && secondNum && operator) {
+    firstNum = operate(firstNum, secondNum, operator)
+    secondNum = ''
+    calcDisplay.textContent = firstNum
+  } else {
+    calcDisplay.textContent = '0'
+  }
   operator = event.target.textContent
-  calcDisplay.textContent = '0'
 }))
 
 eqlBtn.addEventListener("click", function(event) {
