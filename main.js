@@ -23,6 +23,8 @@ function divide(a, b) {
 }
 
 function operate(a, b, operator) {
+  a = parseInt(a)
+  b = parseInt(b)
   switch (operator) {
     case '+':
       return add(a, b)
